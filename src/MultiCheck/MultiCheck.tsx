@@ -2,6 +2,9 @@ import './MultiCheck.css';
 
 import React from 'react';
 
+import CheckOption from './components/CheckOption';
+import ToColumns from './components/ToColumns';
+
 export type Option = {
   label: string;
   value: string;
@@ -24,11 +27,47 @@ type Props = {
   options: Option[];
   columns?: number;
   values?: string[];
-  onChange?: (options: Option[]) => void;
+  onChange?: (values: string[]) => void;
 };
 
-const MultiCheck: React.FunctionComponent<Props> = (): JSX.Element => (
-  <div className="MultiCheck">{/* TODO */}</div>
-);
+const MultiCheck: React.FunctionComponent<Props> = (props): JSX.Element => {
+  function onOptionCheck(optionValue: Option['value']) {
+    return function onChange(checked: boolean) {
+      props.onChange?.(
+        !checked
+          ? (props.values ?? []).filter((value) => value !== optionValue)
+          : [...(props.values ?? []), optionValue],
+      );
+    };
+  }
+
+  function toggleSelectAll(selectAll: boolean) {
+    props.onChange?.(selectAll ? props.options.map((option) => option.value) : []);
+  }
+
+  return (
+    <div className="MultiCheck">
+      {props.label ? <h2>{props.label}</h2> : null}
+
+      <ToColumns columns={props.columns ?? 1}>
+        <CheckOption
+          label="Select All"
+          value="select-all"
+          checked={props.options.length === props.values?.length}
+          onChange={toggleSelectAll}
+        />
+
+        {props.options.map(({label, value}) => (
+          <CheckOption
+            key={value}
+            {...{label, value}}
+            checked={props.values?.includes(value)}
+            onChange={onOptionCheck(value)}
+          />
+        ))}
+      </ToColumns>
+    </div>
+  );
+};
 
 export default MultiCheck;

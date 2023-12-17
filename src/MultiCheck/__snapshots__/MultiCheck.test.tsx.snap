@@ -1,0 +1,751 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MultiCheck initialize renders correctly without the optional props 1`] = `
+<div>
+  <div
+    class="MultiCheck"
+  >
+    <div
+      class="flex-row"
+    >
+      <div
+        class="column"
+      >
+        <div>
+          <input
+            id="select-all"
+            type="checkbox"
+            value="select-all"
+          />
+          <label
+            for="select-all"
+          >
+             
+            Select All
+          </label>
+        </div>
+        <div>
+          <input
+            id="111"
+            type="checkbox"
+            value="111"
+          />
+          <label
+            for="111"
+          >
+             
+            aaa
+          </label>
+        </div>
+        <div>
+          <input
+            id="222"
+            type="checkbox"
+            value="222"
+          />
+          <label
+            for="222"
+          >
+             
+            bbb
+          </label>
+        </div>
+        <div>
+          <input
+            id="333"
+            type="checkbox"
+            value="333"
+          />
+          <label
+            for="333"
+          >
+             
+            ccc
+          </label>
+        </div>
+        <div>
+          <input
+            id="444"
+            type="checkbox"
+            value="444"
+          />
+          <label
+            for="444"
+          >
+             
+            ddd
+          </label>
+        </div>
+        <div>
+          <input
+            id="555"
+            type="checkbox"
+            value="555"
+          />
+          <label
+            for="555"
+          >
+             
+            eee
+          </label>
+        </div>
+        <div>
+          <input
+            id="666"
+            type="checkbox"
+            value="666"
+          />
+          <label
+            for="666"
+          >
+             
+            fff
+          </label>
+        </div>
+        <div>
+          <input
+            id="777"
+            type="checkbox"
+            value="777"
+          />
+          <label
+            for="777"
+          >
+             
+            ggg
+          </label>
+        </div>
+        <div>
+          <input
+            id="888"
+            type="checkbox"
+            value="888"
+          />
+          <label
+            for="888"
+          >
+             
+            hhh
+          </label>
+        </div>
+        <div>
+          <input
+            id="999"
+            type="checkbox"
+            value="999"
+          />
+          <label
+            for="999"
+          >
+             
+            iii
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MultiCheck initialize renders different column configurations correctly 1`] = `
+<div>
+  <div
+    class="MultiCheck"
+  >
+    <div
+      class="flex-row"
+    >
+      <div
+        class="column"
+      >
+        <div>
+          <input
+            id="select-all"
+            type="checkbox"
+            value="select-all"
+          />
+          <label
+            for="select-all"
+          >
+             
+            Select All
+          </label>
+        </div>
+        <div>
+          <input
+            id="111"
+            type="checkbox"
+            value="111"
+          />
+          <label
+            for="111"
+          >
+             
+            aaa
+          </label>
+        </div>
+        <div>
+          <input
+            id="222"
+            type="checkbox"
+            value="222"
+          />
+          <label
+            for="222"
+          >
+             
+            bbb
+          </label>
+        </div>
+        <div>
+          <input
+            id="333"
+            type="checkbox"
+            value="333"
+          />
+          <label
+            for="333"
+          >
+             
+            ccc
+          </label>
+        </div>
+        <div>
+          <input
+            id="444"
+            type="checkbox"
+            value="444"
+          />
+          <label
+            for="444"
+          >
+             
+            ddd
+          </label>
+        </div>
+        <div>
+          <input
+            id="555"
+            type="checkbox"
+            value="555"
+          />
+          <label
+            for="555"
+          >
+             
+            eee
+          </label>
+        </div>
+        <div>
+          <input
+            id="666"
+            type="checkbox"
+            value="666"
+          />
+          <label
+            for="666"
+          >
+             
+            fff
+          </label>
+        </div>
+        <div>
+          <input
+            id="777"
+            type="checkbox"
+            value="777"
+          />
+          <label
+            for="777"
+          >
+             
+            ggg
+          </label>
+        </div>
+        <div>
+          <input
+            id="888"
+            type="checkbox"
+            value="888"
+          />
+          <label
+            for="888"
+          >
+             
+            hhh
+          </label>
+        </div>
+        <div>
+          <input
+            id="999"
+            type="checkbox"
+            value="999"
+          />
+          <label
+            for="999"
+          >
+             
+            iii
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MultiCheck initialize renders different column configurations correctly 2`] = `
+<div>
+  <div
+    class="MultiCheck"
+  >
+    <div
+      class="flex-row"
+    >
+      <div
+        class="column"
+      >
+        <div>
+          <input
+            id="select-all"
+            type="checkbox"
+            value="select-all"
+          />
+          <label
+            for="select-all"
+          >
+             
+            Select All
+          </label>
+        </div>
+        <div>
+          <input
+            id="111"
+            type="checkbox"
+            value="111"
+          />
+          <label
+            for="111"
+          >
+             
+            aaa
+          </label>
+        </div>
+        <div>
+          <input
+            id="222"
+            type="checkbox"
+            value="222"
+          />
+          <label
+            for="222"
+          >
+             
+            bbb
+          </label>
+        </div>
+        <div>
+          <input
+            id="333"
+            type="checkbox"
+            value="333"
+          />
+          <label
+            for="333"
+          >
+             
+            ccc
+          </label>
+        </div>
+        <div>
+          <input
+            id="444"
+            type="checkbox"
+            value="444"
+          />
+          <label
+            for="444"
+          >
+             
+            ddd
+          </label>
+        </div>
+      </div>
+      <div
+        class="column"
+      >
+        <div>
+          <input
+            id="555"
+            type="checkbox"
+            value="555"
+          />
+          <label
+            for="555"
+          >
+             
+            eee
+          </label>
+        </div>
+        <div>
+          <input
+            id="666"
+            type="checkbox"
+            value="666"
+          />
+          <label
+            for="666"
+          >
+             
+            fff
+          </label>
+        </div>
+        <div>
+          <input
+            id="777"
+            type="checkbox"
+            value="777"
+          />
+          <label
+            for="777"
+          >
+             
+            ggg
+          </label>
+        </div>
+        <div>
+          <input
+            id="888"
+            type="checkbox"
+            value="888"
+          />
+          <label
+            for="888"
+          >
+             
+            hhh
+          </label>
+        </div>
+        <div>
+          <input
+            id="999"
+            type="checkbox"
+            value="999"
+          />
+          <label
+            for="999"
+          >
+             
+            iii
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MultiCheck initialize renders different column configurations correctly 3`] = `
+<div>
+  <div
+    class="MultiCheck"
+  >
+    <div
+      class="flex-row"
+    >
+      <div
+        class="column"
+      >
+        <div>
+          <input
+            id="select-all"
+            type="checkbox"
+            value="select-all"
+          />
+          <label
+            for="select-all"
+          >
+             
+            Select All
+          </label>
+        </div>
+        <div>
+          <input
+            id="111"
+            type="checkbox"
+            value="111"
+          />
+          <label
+            for="111"
+          >
+             
+            aaa
+          </label>
+        </div>
+        <div>
+          <input
+            id="222"
+            type="checkbox"
+            value="222"
+          />
+          <label
+            for="222"
+          >
+             
+            bbb
+          </label>
+        </div>
+        <div>
+          <input
+            id="333"
+            type="checkbox"
+            value="333"
+          />
+          <label
+            for="333"
+          >
+             
+            ccc
+          </label>
+        </div>
+      </div>
+      <div
+        class="column"
+      >
+        <div>
+          <input
+            id="444"
+            type="checkbox"
+            value="444"
+          />
+          <label
+            for="444"
+          >
+             
+            ddd
+          </label>
+        </div>
+        <div>
+          <input
+            id="555"
+            type="checkbox"
+            value="555"
+          />
+          <label
+            for="555"
+          >
+             
+            eee
+          </label>
+        </div>
+        <div>
+          <input
+            id="666"
+            type="checkbox"
+            value="666"
+          />
+          <label
+            for="666"
+          >
+             
+            fff
+          </label>
+        </div>
+        <div>
+          <input
+            id="777"
+            type="checkbox"
+            value="777"
+          />
+          <label
+            for="777"
+          >
+             
+            ggg
+          </label>
+        </div>
+      </div>
+      <div
+        class="column"
+      >
+        <div>
+          <input
+            id="888"
+            type="checkbox"
+            value="888"
+          />
+          <label
+            for="888"
+          >
+             
+            hhh
+          </label>
+        </div>
+        <div>
+          <input
+            id="999"
+            type="checkbox"
+            value="999"
+          />
+          <label
+            for="999"
+          >
+             
+            iii
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MultiCheck initialize renders the label if label provided 1`] = `
+<div>
+  <div
+    class="MultiCheck"
+  >
+    <h2>
+      my-multi-check
+    </h2>
+    <div
+      class="flex-row"
+    >
+      <div
+        class="column"
+      >
+        <div>
+          <input
+            id="select-all"
+            type="checkbox"
+            value="select-all"
+          />
+          <label
+            for="select-all"
+          >
+             
+            Select All
+          </label>
+        </div>
+        <div>
+          <input
+            id="111"
+            type="checkbox"
+            value="111"
+          />
+          <label
+            for="111"
+          >
+             
+            aaa
+          </label>
+        </div>
+        <div>
+          <input
+            id="222"
+            type="checkbox"
+            value="222"
+          />
+          <label
+            for="222"
+          >
+             
+            bbb
+          </label>
+        </div>
+        <div>
+          <input
+            id="333"
+            type="checkbox"
+            value="333"
+          />
+          <label
+            for="333"
+          >
+             
+            ccc
+          </label>
+        </div>
+        <div>
+          <input
+            id="444"
+            type="checkbox"
+            value="444"
+          />
+          <label
+            for="444"
+          >
+             
+            ddd
+          </label>
+        </div>
+        <div>
+          <input
+            id="555"
+            type="checkbox"
+            value="555"
+          />
+          <label
+            for="555"
+          >
+             
+            eee
+          </label>
+        </div>
+        <div>
+          <input
+            id="666"
+            type="checkbox"
+            value="666"
+          />
+          <label
+            for="666"
+          >
+             
+            fff
+          </label>
+        </div>
+        <div>
+          <input
+            id="777"
+            type="checkbox"
+            value="777"
+          />
+          <label
+            for="777"
+          >
+             
+            ggg
+          </label>
+        </div>
+        <div>
+          <input
+            id="888"
+            type="checkbox"
+            value="888"
+          />
+          <label
+            for="888"
+          >
+             
+            hhh
+          </label>
+        </div>
+        <div>
+          <input
+            id="999"
+            type="checkbox"
+            value="999"
+          />
+          <label
+            for="999"
+          >
+             
+            iii
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
