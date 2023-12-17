@@ -1,7 +1,8 @@
 import '@testing-library/jest-dom';
 
-import {fireEvent, getAllByRole, render} from '@testing-library/react';
 import React from 'react';
+
+import {fireEvent, getAllByRole, render} from '@testing-library/react';
 
 import MultiCheck, {Option} from './MultiCheck';
 
@@ -41,7 +42,7 @@ describe('MultiCheck', () => {
       const {container} = render(
         <MultiCheck
           options={options}
-          values={options.slice(0, numOfCheckedOptions).map((option) => option.value)}
+          initialValues={options.slice(0, numOfCheckedOptions).map((option) => option.value)}
         />,
       );
 
@@ -67,7 +68,7 @@ describe('MultiCheck', () => {
   describe('select-all logic', () => {
     it('uncheckes select-all by default if any other option is unchecked', () => {
       const {container} = render(
-        <MultiCheck options={options} values={options.slice(1).map((option) => option.value)} />,
+        <MultiCheck options={options} initialValues={options.slice(1).map((option) => option.value)} />,
       );
 
       expect(getAllByRole(container, 'checkbox')[0]).not.toBeChecked();
@@ -84,7 +85,7 @@ describe('MultiCheck', () => {
 
     it('checkes select-all by default if all other options are checked', () => {
       const {container} = render(
-        <MultiCheck options={options} values={options.map((option) => option.value)} />,
+        <MultiCheck options={options} initialValues={options.map((option) => option.value)} />,
       );
 
       expect(getAllByRole(container, 'checkbox')[0]).toBeChecked();
@@ -93,7 +94,11 @@ describe('MultiCheck', () => {
     it('returns no options when select-all is unchecked', () => {
       const onChange = jest.fn();
       const {container} = render(
-        <MultiCheck options={options} onChange={onChange} values={options.map((option) => option.value)} />,
+        <MultiCheck
+          options={options}
+          onChange={onChange}
+          initialValues={options.map((option) => option.value)}
+        />,
       );
 
       fireEvent.click(getAllByRole(container, 'checkbox')[0]);

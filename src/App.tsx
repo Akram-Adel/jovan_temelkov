@@ -1,4 +1,4 @@
-import React, {useState, FunctionComponent} from 'react';
+import React, {FunctionComponent} from 'react';
 
 import MultiCheck, {Option} from './MultiCheck';
 
@@ -17,18 +17,20 @@ const options: Option[] = [
 const defaultValues: string[] = ['333', '555'];
 
 const App: FunctionComponent = (): JSX.Element => {
-  const [selectedValues, setSelectedValues] = useState<string[]>(defaultValues);
+  const [selectedValues, setSelectedValues] = React.useState<string[]>(defaultValues);
 
   return (
     <div>
       <h1>Multi Check Component</h1>
+
       <MultiCheck
         label="my-multi-check"
         options={options}
-        values={selectedValues}
+        initialValues={defaultValues}
         onChange={setSelectedValues}
         columns={2}
       />
+
       <div>
         <h2>Current selected values:</h2>
         <div>{selectedValues.join(',')}</div>

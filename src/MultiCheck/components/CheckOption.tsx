@@ -1,4 +1,8 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+
+import type {Option} from '../MultiCheck';
+import {CheckAllOptionState, CheckDefaultOptionState, CheckOptionState} from '../utils/CheckOptionState';
+import MultiCheckObservable, {State} from '../utils/MultiCheckObservable';
 
 /**
  * @param {string} label - option label
@@ -7,25 +11,43 @@ import React from 'react';
  * @param {Function} onChange - called when the option checked state
  *                              changes
  */
-type Props = {
-  label: string;
-  value: string;
-  checked?: boolean;
-  onChange: (checked: boolean) => void;
-};
+export type Props = {
+  multiCheckObservable: MultiCheckObservable;
+} & (Option | {selectAll: boolean});
 
 const CheckOption: React.FunctionComponent<Props> = (props): JSX.Element => {
+  const checkOptionState: CheckOptionState = React.useRef(
+    'selectAll' in props ? new CheckAllOptionState() : new CheckDefaultOptionState(props),
+  ).current;
+
+  const [checked, setChecked] = React.useState(false);
+
+  useEffect(() => {
+    function observer(checkState: State) {
+      const isChecked = checkOptionState.isChecked(checkState);
+      setChecked(isChecked);
+    }
+
+    props.multiCheckObservable.subscribe(observer);
+    return () => props.multiCheckObservable.unsubscribe(observer);
+  }, []);
+
   return (
     <div>
       <input
-        key={props.value}
+        key={checkOptionState.value}
         type="checkbox"
-        id={props.value}
-        value={props.value}
-        checked={props.checked}
-        onChange={(e) => props.onChange(e.target.checked)}
+        id={checkOptionState.value}
+        value={checkOptionState.value}
+        checked={checked}
+        onChange={(e) => {
+          props.multiCheckObservable[checkOptionState.onChangeMethod](
+            checkOptionState.value,
+            e.target.checked,
+          );
+        }}
       />
-      <label htmlFor={props.value}> {props.label}</label>
+      <label htmlFor={checkOptionState.value}> {checkOptionState.label}</label>
     </div>
   );
 };
