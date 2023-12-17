@@ -42,7 +42,7 @@ const MultiCheck: React.FunctionComponent<Props> = (props): JSX.Element => {
   ).current;
 
   React.useEffect(() => {
-    multiCheckObservable.subscribe((checkState) => {
+    multiCheckObservable.subscribe('all', (checkState) => {
       props.onChange?.(checkState.filter((s) => s.checked).map((s) => s.value));
     });
 

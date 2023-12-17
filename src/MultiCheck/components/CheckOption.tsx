@@ -28,8 +28,8 @@ const CheckOption: React.FunctionComponent<Props> = (props): JSX.Element => {
       setChecked(isChecked);
     }
 
-    props.multiCheckObservable.subscribe(observer);
-    return () => props.multiCheckObservable.unsubscribe(observer);
+    props.multiCheckObservable.subscribe(checkOptionState.subscription, observer);
+    return () => props.multiCheckObservable.unsubscribe(checkOptionState.subscription, observer);
   }, []);
 
   return (
