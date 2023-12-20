@@ -5,7 +5,7 @@ import styles from './styles.module.scss';
 const OfferCard = props => {
   const openDetails = e => {
     e.preventDefault();
-    // TODO: implement details for the product offer
+    props.ctaProductDetails(props.offer);
   };
 
   const { name: partnerBankName } = props.offer.partner_bank;

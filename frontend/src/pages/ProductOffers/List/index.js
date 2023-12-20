@@ -8,11 +8,18 @@ const List = props => {
     props.openAccount(offer.id);
   };
 
+  const ctaProductDetailsHandler = offer => {
+    props.productDetailsObservable.loadProduct(offer.id);
+  }
+
   return (
     <ul className="offersListWrapper">
       {props.offers.map(offer => (
         <li key={offer.id}>
-          <OfferCard ctaClick={ctaClickHandler} offer={offer} />
+          <OfferCard
+            ctaClick={ctaClickHandler}
+            ctaProductDetails={ctaProductDetailsHandler}
+            offer={offer} />
         </li>
       ))}
     </ul>
