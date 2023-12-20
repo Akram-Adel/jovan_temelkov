@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductDetailsObservable formats product-offer into state correctly 1`] = `
+Object {
+  "id": "JTB009",
+  "interestInfo": Object {
+    "availability": Array [
+      "Availability",
+      undefined,
+    ],
+    "effective_rate": Array [
+      "Effective rate",
+      "1.17% p.a.",
+    ],
+    "interest_of_early_termination": Array [
+      "Interest in case of early termination",
+      0,
+    ],
+    "nominal_rate": Array [
+      "Nominal rate",
+      "1.2% p.a.",
+    ],
+    "term": Array [
+      "Term",
+      "5 year/s",
+    ],
+  },
+  "productDetails": Object {
+    "currency": Array [
+      "Currency",
+      "EUR",
+    ],
+    "deposit_guarantee": Array [
+      "Deposit guarantee",
+      "bis 100.000 EUR",
+    ],
+    "investment_amount": Array [
+      "Min/Max investment amount",
+      "10000 / 100000",
+    ],
+    "withholding_tax": Array [
+      "Withholding tax",
+      "false",
+    ],
+  },
+}
+`;
